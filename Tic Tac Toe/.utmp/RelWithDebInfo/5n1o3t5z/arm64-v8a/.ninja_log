@@ -1,0 +1,23 @@
+# ninja log v5
+2388	2516	7573703016936018	C:/Users/Bogdan/Documents/GitHub/Tic-Tac-Toe/Tic Tac Toe/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5n1o3t5z/obj/arm64-v8a/libgame.so	e2ea218eb3f2c787
+20	2388	7573703015590521	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	85fa4f8a3390bdca
+60	603	7573702997504334	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	2cf9895f85439291
+7	2074	7573703012405886	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	167a44d594aacbd2
+34	1899	7573703010504035	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	16cb8168cc58a1d4
+605	1105	7573703002611990	C:/Users/Bogdan/Documents/GitHub/Tic-Tac-Toe/Tic Tac Toe/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5n1o3t5z/obj/arm64-v8a/libswappywrapper.so	45d2ef016d780b94
+26	1842	7573703010024900	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	d1f1f5fe1216da66
+52	2002	7573703011674129	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	2f6d301bd22424a5
+14	1936	7573703010925055	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	afff117131f4ea04
+1	1969	7573703011327473	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	16ef4a2f5b463adf
+43	2252	7573703014158749	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	9482abdb8a121b20
+85	465	7573704884568606	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	2cf9895f85439291
+465	956	7573704889102248	C:/Users/Bogdan/Documents/GitHub/Tic-Tac-Toe/Tic Tac Toe/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5n1o3t5z/obj/arm64-v8a/libswappywrapper.so	45d2ef016d780b94
+31	1384	7573704893769739	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	16ef4a2f5b463adf
+18	1407	7573704894006513	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	afff117131f4ea04
+49	1418	7573704894202445	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	d1f1f5fe1216da66
+73	1423	7573704894270042	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	16cb8168cc58a1d4
+61	1456	7573704894701986	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	2f6d301bd22424a5
+39	1576	7573704895760347	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	167a44d594aacbd2
+25	1777	7573704897839749	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	9482abdb8a121b20
+10	1941	7573704899561702	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	85fa4f8a3390bdca
+1941	2099	7573704901171441	C:/Users/Bogdan/Documents/GitHub/Tic-Tac-Toe/Tic Tac Toe/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/5n1o3t5z/obj/arm64-v8a/libgame.so	e2ea218eb3f2c787
