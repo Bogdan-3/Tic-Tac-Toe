@@ -78,7 +78,7 @@ public class TicTacToe : MonoBehaviour
 
         if (mat[1, 0] == 1)
             but4.GetComponent<Image>().sprite = X;
-        else if (mat[0, 0] == 2) but4.GetComponent<Image>().sprite = O;
+        else if (mat[1, 0] == 2) but4.GetComponent<Image>().sprite = O;
 
         if (mat[1, 1] == 1)
             but5.GetComponent<Image>().sprite = X;
