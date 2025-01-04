@@ -5,6 +5,8 @@ using TMPro;
 
 public class TicTacToe : MonoBehaviour
 {
+    public LineRenderer lr;
+
     public GameObject but1;
     public GameObject but2;
     public GameObject but3;
@@ -26,6 +28,8 @@ public class TicTacToe : MonoBehaviour
     int i, j;
 
     float[,] mat = { { 0, 0, 0 }, { 0, 0, 0 }, { 0, 0, 0 } };
+
+    bool wining = false;
 
     public void getI(int ii)
     {
@@ -55,10 +59,18 @@ public class TicTacToe : MonoBehaviour
         but7.GetComponent<Image>().sprite = Nothing;
         but8.GetComponent<Image>().sprite = Nothing;
         but9.GetComponent<Image>().sprite = Nothing;
+        lr.SetPosition(0, Vector3.zero);
+        lr.SetPosition(1, Vector3.zero);
+        wining = false;
     }
 
     private void FixedUpdate()
     {
+        if (wining == false)
+        {
+            win();
+        }
+
         if (nr == 1)
             text.text = "X turn";
         else if (nr == 2)
@@ -99,5 +111,85 @@ public class TicTacToe : MonoBehaviour
         if (mat[2, 2] == 1)
             but9.GetComponent<Image>().sprite = X;
         else if (mat[2, 2] == 2) but9.GetComponent<Image>().sprite = O;
+    }
+
+    void win()
+    {
+        if (mat[0, 1] == mat[0, 0] && mat[0, 1] == mat[0, 2] && mat[0, 1] != 0)
+        {
+            lr.SetPosition(0, but1.transform.position);
+            lr.SetPosition(1, but3.transform.position);
+            wining = true;
+            DisabeButton();
+        }
+
+        if (mat[1, 1] == mat[1, 0] && mat[1, 1] == mat[1, 2] && mat[1, 1] != 0)
+        {
+            lr.SetPosition(0, but4.transform.position);
+            lr.SetPosition(1, but6.transform.position);
+            wining = true;
+            DisabeButton();
+        }
+
+        if (mat[2, 1] == mat[2, 0] && mat[2, 1] == mat[2, 2] && mat[2, 1] != 0)
+        {
+            lr.SetPosition(0, but7.transform.position);
+            lr.SetPosition(1, but9.transform.position);
+            wining = true;
+            DisabeButton();
+        }
+
+        if (mat[1, 0] == mat[0, 0] && mat[1, 0] == mat[2, 0] && mat[1, 0] != 0)
+        {
+            lr.SetPosition(0, but1.transform.position);
+            lr.SetPosition(1, but7.transform.position);
+            wining = true;
+            DisabeButton();
+        }
+
+        if (mat[1, 1] == mat[0, 1] && mat[1, 1] == mat[2, 1] && mat[1, 1] != 0)
+        {
+            lr.SetPosition(0, but2.transform.position);
+            lr.SetPosition(1, but8.transform.position);
+            wining = true;
+            DisabeButton();
+        }
+
+        if (mat[1, 2] == mat[0, 2] && mat[1, 2] == mat[2, 2] && mat[1, 2] != 0)
+        {
+            lr.SetPosition(0, but3.transform.position);
+            lr.SetPosition(1, but9.transform.position);
+            wining = true;
+            DisabeButton();
+        }
+
+        if (mat[0, 0] == mat[1, 1] && mat[0, 0] == mat[2, 2] && mat[0, 0] != 0)
+        {
+            lr.SetPosition(0, but1.transform.position);
+            lr.SetPosition(1, but9.transform.position);
+            wining = true;
+            DisabeButton();
+        }
+
+        if (mat[0, 2] == mat[1, 1] && mat[1, 1] == mat[2, 0] && mat[1, 1] != 0)
+        {
+            lr.SetPosition(0, but3.transform.position);
+            lr.SetPosition(1, but7.transform.position);
+            wining = true;
+            DisabeButton();
+        }
+    }
+
+    void DisabeButton()
+    {
+        but1.GetComponent<Button>().enabled = false;
+        but2.GetComponent<Button>().enabled = false;
+        but3.GetComponent<Button>().enabled = false;
+        but4.GetComponent<Button>().enabled = false;
+        but5.GetComponent<Button>().enabled = false;
+        but6.GetComponent<Button>().enabled = false;
+        but7.GetComponent<Button>().enabled = false;
+        but8.GetComponent<Button>().enabled = false;
+        but9.GetComponent<Button>().enabled = false;
     }
 }
